@@ -1,0 +1,348 @@
+/*
+ * main.c
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "dsk6713_led.h"
+#include "DSPF_sp_lms.h"
+#include "DSPF_sp_fir_gen.h"
+#include <string.h>
+#include "dsk6713_dip.h"
+#include <audio.h>
+#include <stdint.h>
+
+#define CHANNEL_SIZE 8
+#define SINE_TABLE_SIZE_48 48
+#define FREQUENCY_SAMPLE_RATE 6
+#define NUM_COEFFS 32
+#define SINE_TABLE_SIZE 100
+
+//#define M_PI 3.14159265358979323846
+
+#define DURATION 10
+//#define ADAPTATION_RATE 0.00000000001
+#define ADAPTATION_RATE 0.00000000001
+//#define MAX_ERROR 1
+#define MAX_ERROR ADAPTATION_RATE/100
+#define BUFF_SIZE 8
+#define SAMPLE_FREQ 8
+#define NUM_COEFFICIENTS 36
+#define NUM_SAMPLES 80
+
+inline float TPMixSamples(float a, float b) {
+    return
+            // If both samples are negative, mixed signal must have an amplitude between the lesser of A and B, and the minimum permissible negative amplitude
+            a < 0 && b < 0 ?
+                ((float)a + (int)b) - (((float)a * (float)b)) :
+
+            // If both samples are positive, mixed signal must have an amplitude between the greater of A and B, and the maximum permissible positive amplitude
+            ( a > 0 && b > 0 ?
+                ((float)a + (float)b) - (((float)a * (int)b)/INT16_MAX)
+
+            // If samples are on opposite sides of the 0-crossing, mixed signal should reflect that samples cancel each other out somewhat
+            :
+                a + b);
+}
+//#define beta 0.01
+//#define N 30
+
+// Codec configuration settings
+DSK6713_AIC23_Config config = { \
+    0x0017,  /* 0 DSK6713_AIC23_LEFTINVOL  Left line input channel volume */ \
+    0x0017,  /* 1 DSK6713_AIC23_RIGHTINVOL Right line input channel volume */\
+    0x01f9,  /* 2 DSK6713_AIC23_LEFTHPVOL  Left channel headphone volume */  \
+    0x01f9,  /* 3 DSK6713_AIC23_RIGHTHPVOL Right channel headphone volume */ \
+    0x0011,  /* 4 DSK6713_AIC23_ANAPATH    Analog audio path control */      \
+    0x0000,  /* 5 DSK6713_AIC23_DIGPATH    Digital audio path control */     \
+    0x0000,  /* 6 DSK6713_AIC23_POWERDOWN  Power down control */             \
+    0x0043,  /* 7 DSK6713_AIC23_DIGIF      Digital audio interface format */ \
+    0x0001,  /* 8 DSK6713_AIC23_SAMPLERATE Sample rate control */            \
+    0x0001   /* 9 DSK6713_AIC23_DIGACT     Digital interface activation */   \
+};
+
+//Uint32 SINE[SINE_TABLE_SIZE] = {
+//    0x0000, 0x10b4, 0x2120, 0x30fb, 0x3fff, 0x4dea,
+//    0x5a81, 0x658b, 0x6ed8, 0x763f, 0x7ba1, 0x7ee5,
+//    0x7ffd, 0x7ee5, 0x7ba1, 0x76ef, 0x6ed8, 0x658b,
+//    0x5a81, 0x4dea, 0x3fff, 0x30fb, 0x2120, 0x10b4,
+//    0x0000, 0xef4c, 0xdee0, 0xcf06, 0xc002, 0xb216,
+//    0xa57f, 0x9a75, 0x9128, 0x89c1, 0x845f, 0x811b,
+//    0x8002, 0x811b, 0x845f, 0x89c1,0x9128, 0x9a76,
+//    0xa57f, 0xb216, 0xc002, 0xcf06, 0xdee0, 0xef4c
+//};
+
+float filter [36] = {
+		 0.0056, 0.0771, 0.0735, 0.0021, 0.0453,-0.0076,-0.0022,-0.0407,-0.0467,-0.0666,-0.0635,-0.0598,-0.0396,	\
+		-0.0167, 0.0125, 0.0384, 0.0598, 0.0711, 0.0711, 0.0598, 0.0384, 0.0125,-0.0167,-0.0396,-0.0598,-0.0635,	\
+		-0.0666,-0.0467,-0.0407,-0.0022,-0.0076, 0.0453, 0.0021, 0.0735, 0.0771, 0.0056								\
+};
+
+
+float filterBPF [36] = {
+		 0.0056, 0.0771, 0.0735, 0.0021, 0.0453,-0.0076,-0.0022,-0.0407,-0.0467,-0.0666,-0.0635,-0.0598,-0.0396,	\
+		-0.0167, 0.0125, 0.0384, 0.0598, 0.0711, 0.0711, 0.0598, 0.0384, 0.0125,-0.0167,-0.0396,-0.0598,-0.0635,	\
+		-0.0666,-0.0467,-0.0407,-0.0022,-0.0076, 0.0453, 0.0021, 0.0735, 0.0771, 0.0056								\
+};
+
+
+// reverses a string 'str' of length 'len'
+void reverse(char *str, int len)
+{
+    Int16 i=0, j=len-1, temp;
+    while (i<j)
+    {
+        temp = str[i];
+        str[i] = str[j];
+        str[j] = temp;
+        i++; j--;
+    }
+}
+
+ // Converts a given integer x to string str[].  d is the number
+ // of digits required in output. If d is more than the number
+ // of digits in x, then 0s are added at the beginning.
+int intToStr(int x, char str[], int d)
+{
+    int i = 0;
+    while (x)
+    {
+        str[i++] = (x%10) + '0';
+        x = x/10;
+    }
+
+    // If number of digits required is more, then
+    // add 0s at the beginning
+    while (i < d)
+        str[i++] = '0';
+
+    reverse(str, i);
+    str[i] = '\0';
+    return i;
+}
+
+void ftoa(float n, char *res, int afterpoint)
+{
+    // Extract integer part
+    int ipart = (int)n;
+
+    // Extract floating part
+    float fpart = n - (float)ipart;
+
+    // convert integer part to string
+    int i = intToStr(ipart, res, 0);
+
+    // check for display option after point
+    if (afterpoint != 0)
+    {
+        res[i] = '.';  // add dot
+
+        // Get the value of fraction part upto given no.
+        // of points after dot. The third parameter is needed
+        // to handle cases like 233.007
+        fpart = fpart * pow(10, afterpoint);
+
+        intToStr((int)fpart, res + i + 1, afterpoint);
+    }
+}
+
+int Audio_Out_Downsample_BUF(DSK6713_AIC23_CodecHandle code_h, Uint32* buf, int size, int sample, float* buffer)
+{
+	int i;
+	int j;
+
+	for (i = 0; i < size; i++)
+	{
+		for (j = 0; j < sample; j++)
+		{
+			buffer[j+i] = (float) buf[i+6];
+		}
+	}
+	return 0;
+}
+
+void main()
+{
+
+#if 1
+	//Odd indices = Left Channel, Even indices = Right Channel
+
+	Uint32* input = malloc (sizeof(Uint32)*BUFF_SIZE*NUM_SAMPLES);
+	float* inputLMS = malloc (sizeof(float)*BUFF_SIZE*NUM_SAMPLES);
+	//memset(inputLMS, 0, sizeof(inputLMS));
+	float* desiredLMS = malloc (sizeof(float)*BUFF_SIZE*NUM_SAMPLES);
+	float* outputLMS = malloc (sizeof(float)*BUFF_SIZE*NUM_SAMPLES);
+	//memset(outputLMS, 0, sizeof(outputLMS));
+	//float* matchLMS = malloc (sizeof(float)*BUFF_SIZE*NUM_SAMPLES);
+	Int16* output = malloc (sizeof(Int16)*BUFF_SIZE*NUM_SAMPLES);
+	//memset(output, 0, sizeof(output));
+	Int16 outL;
+	Int16 outR;
+
+//	Uint32 input [BUFF_SIZE*NUM_SAMPLES+36];
+//	float inputLMS [BUFF_SIZE*NUM_SAMPLES];
+//	float matchLMS [BUFF_SIZE*NUM_SAMPLES];
+//	float outputLMS [BUFF_SIZE*NUM_SAMPLES+36];
+//	Int16 output [BUFF_SIZE*NUM_SAMPLES+36];
+
+	DSK6713_init();
+	DSK6713_LED_init();
+	DSK6713_DIP_init();
+	DSK6713_AIC23_CodecHandle codec = Audio_Codec_Init(SAMPLE_FREQ);
+	//DSK6713_AIC23_CodecHandle codec_h = DSK6713_AIC23_openCodec(4, &config);
+	//DSK6713_AIC23_setFreq(codec_h, DSK6713_AIC23_FREQ_8KHZ);
+	int ms = 0;
+	int i = 0;
+	int offset = 0;
+
+	while(1)
+	{
+		DSK6713_LED_off(0);
+		DSK6713_LED_off(1);
+		DSK6713_LED_off(2);
+		DSK6713_LED_off(3);
+
+		for (ms = 0; ms < NUM_SAMPLES; ms++)
+		{
+			offset = ms*BUFF_SIZE;
+			DSK6713_LED_toggle(0);
+
+			for (i = 0; i < BUFF_SIZE; i+=2)
+			{
+//				outL = (Int16) output[i+1+offset];
+//				outR = (Int16) output[i+1+offset];
+
+				/* Get input data */
+
+				/* Get the noise signal */
+				while(!DSK6713_AIC23_read(codec, &input[i+offset]));
+				inputLMS [i+offset] = (float) input[i+offset];
+				//while (!DSK6713_AIC23_write(codec, outL));
+				/* Get the desired signal */
+				while(!DSK6713_AIC23_read(codec, &input[i+1+offset]));
+				/* Write to LMS buffer*/
+				desiredLMS [i+offset] = (float) input[i+1+offset];
+//				while (!DSK6713_AIC23_write(codec, outL));
+//				while (!DSK6713_AIC23_write(codec, outR));
+			}
+		}
+
+
+
+		DSK6713_LED_on(0);
+
+		/* LEFT INPUT - NOISE */
+		while (DSK6713_DIP_get(3)==0)
+		{
+			for (ms = 0; ms < NUM_SAMPLES; ms++)
+			{
+				offset = ms*BUFF_SIZE;
+
+				for (i = 0; i < BUFF_SIZE; i+=2)
+				{
+					outL = (Int16) input[i+offset];
+					while (!DSK6713_AIC23_write(codec, outL));
+					while (!DSK6713_AIC23_write(codec, outL));
+				}
+			}
+		}
+		DSK6713_LED_toggle(1);
+		/* RIGHT INPUT - DESIRED TONE*/
+		while (DSK6713_DIP_get(2)==0)
+		{
+			//DSPF_sp_fir_gen(matchLMS, filterBPF, outputLMS, NUM_COEFFICIENTS, BUFF_SIZE*NUM_SAMPLES);
+			for (ms = 0; ms < NUM_SAMPLES; ms++)
+			{
+				offset = ms*BUFF_SIZE;
+				for (i = 0; i < BUFF_SIZE; i+=2)
+				{
+					outR = (Int16) input[i+1+offset];
+					//outR = (Int16) matchLMS[i+offset];
+					while (!DSK6713_AIC23_write(codec, outR));
+					while (!DSK6713_AIC23_write(codec, outR));
+				}
+				//Audio_Out(codec, RIGHT_CHANNEL, &output[offset], &output[offset], BUFF_SIZE);
+			}
+		}
+
+		DSK6713_LED_toggle(1);
+
+
+		DSPF_sp_lms(&inputLMS[1], filter, desiredLMS, outputLMS, ADAPTATION_RATE, MAX_ERROR, 36, BUFF_SIZE*NUM_SAMPLES);
+		//errors[t++] = error;
+
+		float peak = 0;
+		float temp = 0;
+//		for (i = 0; i < BUFF_SIZE*NUM_SAMPLES; i++)
+//		{
+//			//DSK6713_LED_toggle(2);
+//			temp = outputLMS[i] + desiredLMS[i];
+//			if (temp > peak)
+//			{
+//				peak = temp;
+//			}
+//		}
+
+		for (i = 0; i < BUFF_SIZE*NUM_SAMPLES; i++)
+		{
+			//temp = (outputLMS[i] + desiredLMS[i]) / peak;
+			//temp += peak;
+//			output[i] = (Int16) temp;
+			output[i] = (Int16)outputLMS[i] + (Int16)desiredLMS[i];
+		}
+		DSK6713_LED_toggle(1);
+		DSK6713_LED_toggle(0);
+
+		/* OUTPUT  */
+		while (DSK6713_DIP_get(0) == 0)
+		{
+			for (ms = 0; ms < NUM_SAMPLES; ms++)
+			{
+				offset = ms*BUFF_SIZE;
+				DSK6713_LED_toggle(3);
+				for (i = 0; i < BUFF_SIZE; i+=2)
+				{
+//////					/* LMS OUTPUT SIGNAL */
+					outL = (Int16)outputLMS[i+offset];
+					/* DESIRED SIGNAL TONE */
+					outR = (Int16)outputLMS[i+1+offset];
+					while (!DSK6713_AIC23_write(codec, outL));
+					while (!DSK6713_AIC23_write(codec, outR));
+				}
+			}
+		}
+
+		DSK6713_LED_toggle(3);
+		while (DSK6713_DIP_get(1) == 0)
+		{
+			for (ms = 0; ms < NUM_SAMPLES; ms++)
+			{
+				offset = ms*BUFF_SIZE;
+				DSK6713_LED_toggle(3);
+				for (i = 0; i < BUFF_SIZE; i++)
+				{
+					/* DESIRED SIGNAL TONE */
+					/* LMS OUTPUT SIGNAL */
+					outL = output[i+offset];
+					outR = output[i+1+offset];
+	//				outL = (Int16)outputLMS[i+offset];
+	//				/* DESIRED SIGNAL TONE */
+	//				outR = (Int16)outputLMS[i+1+offset];
+
+					while (!DSK6713_AIC23_write(codec, outL));
+					while (!DSK6713_AIC23_write(codec, outR));
+				}
+			}
+		}
+
+		//Audio_Codec_Cleanup(codec);
+	}
+//	free(input);
+//	free(inputLMS);
+//	free(outputLMS);
+//	free(matchLMS);
+//	free(output);
+
+#endif
+}
+

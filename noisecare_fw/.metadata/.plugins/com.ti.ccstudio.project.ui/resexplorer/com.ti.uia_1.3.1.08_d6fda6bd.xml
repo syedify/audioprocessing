@@ -1,0 +1,2164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource.explorer version="1.0" name="System Analyzer (UIA Target)" dir="" href="http://processors.wiki.ti.com/index.php/Multicore_System_Analyzer">
+
+	<contents name="C6000" desc="C6000" icon="plugin://icons/obj16/devices.png">
+		<contents name="Generic devices" desc="Generic devices" icon="plugin://icons/obj16/devices.png">
+			<contents name="Generic C64x+ Device" desc="Generic C64x+ Device" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574607547118">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C64x+ Device</tag>
+					<tag>Generic devices</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574607604683">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C64x+ Device</tag>
+					<tag>Generic devices</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574607604683"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_GenericC64xpDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574607604683"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_GenericC64xpDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574607604683"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_GenericC64xpDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574608293759">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C64x+ Device</tag>
+					<tag>Generic devices</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574608293759"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_GenericC64xpDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574608293759"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_GenericC64xpDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC64xPlusDevice"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="Generic C66xx Device" desc="Generic C66xx Device" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574608807289">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C66xx Device</tag>
+					<tag>Generic devices</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574608867134">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C66xx Device</tag>
+					<tag>Generic devices</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574608867134"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_GenericC66xxDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC66xxDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574608867134"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_GenericC66xxDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC66xxDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574608867134"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_GenericC66xxDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC66xxDevice"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574609491235">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C66xx Device</tag>
+					<tag>Generic devices</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574609491235"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_GenericC66xxDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC66xxDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574609491235"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_GenericC66xxDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC66xxDevice"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="Generic C674x Device" desc="Generic C674x Device" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574609973417">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C674x Device</tag>
+					<tag>Generic devices</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574610037252">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C674x Device</tag>
+					<tag>Generic devices</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574610037252"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_GenericC674xDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574610037252"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_GenericC674xDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574610037252"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_GenericC674xDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574610661353">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>Generic C674x Device</tag>
+					<tag>Generic devices</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574610661353"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_GenericC674xDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574610661353"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_GenericC674xDevice"/>
+							<attribute key="device.variant" value="com.ti.ccstudio.deviceModel.C6000.GenericC674xDevice"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+		</contents>
+		<contents name="C645x High Performance DSP" desc="C645x High Performance DSP" icon="plugin://icons/obj16/devices.png">
+			<contents name="DSK6455" desc="DSK6455" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574622359112">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>DSK6455</tag>
+					<tag>C645x High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574622413258">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>DSK6455</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574622413258"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_DSK6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.DSK6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574622413258"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_DSK6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.DSK6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574622413258"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_DSK6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.DSK6455"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574622988343">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>DSK6455</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574622988343"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_DSK6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.DSK6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574622988343"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_DSK6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.DSK6455"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="EVM6455 (TMS320C6455)" desc="EVM6455 (TMS320C6455)" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574623429488">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVM6455 (TMS320C6455)</tag>
+					<tag>C645x High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574623504152">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVM6455 (TMS320C6455)</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574623504152"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_EVM6455_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.EVM6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574623504152"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_EVM6455_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.EVM6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574623504152"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_EVM6455_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.EVM6455"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574624047889">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVM6455 (TMS320C6455)</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574624047889"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_EVM6455_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.EVM6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574624047889"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_EVM6455_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455.EVM6455"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="EVMC6457 (TMS320C6457)" desc="EVMC6457 (TMS320C6457)" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574624463957">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6457 (TMS320C6457)</tag>
+					<tag>C645x High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574624519242">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6457 (TMS320C6457)</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574624519242"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_EVMC6457_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.EVMC6457"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574624519242"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_EVMC6457_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.EVMC6457"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574624519242"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_EVMC6457_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.EVMC6457"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574625051580">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6457 (TMS320C6457)</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574625051580"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_EVMC6457_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.EVMC6457"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574625051580"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_EVMC6457_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.EVMC6457"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMDSEVM6457L" desc="TMDSEVM6457L" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574625473347">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMDSEVM6457L</tag>
+					<tag>C645x High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574625527493">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMDSEVM6457L</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574625527493"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMDSEVM6457L"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.TMDSEVM6457L"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574625527493"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMDSEVM6457L"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.TMDSEVM6457L"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574625527493"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMDSEVM6457L"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.TMDSEVM6457L"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574626048432">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMDSEVM6457L</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574626048432"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMDSEVM6457L"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.TMDSEVM6457L"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574626048432"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMDSEVM6457L"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457.TMDSEVM6457L"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6452" desc="TMS320C6452" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574626490717">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6452</tag>
+					<tag>C645x High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574626542583">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6452</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574626542583"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6452"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6452"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574626542583"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6452"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6452"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574626542583"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6452"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6452"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574627038444">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6452</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574627038444"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6452"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6452"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574627038444"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6452"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6452"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6454" desc="TMS320C6454" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574627429433">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6454</tag>
+					<tag>C645x High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574627490419">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6454</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574627490419"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6454"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6454"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574627490419"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6454"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6454"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574627490419"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6454"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6454"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574627993119">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6454</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574627993119"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6454"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6454"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574627993119"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6454"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6454"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6455" desc="TMS320C6455" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574628387528">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6455</tag>
+					<tag>C645x High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574628451933">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6455</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574628451933"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574628451933"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574628451933"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574628989971">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6455</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574628989971"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574628989971"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6455"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6455"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6457" desc="TMS320C6457" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574629422567">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6457</tag>
+					<tag>C645x High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574629476712">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6457</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574629476712"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574629476712"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574629476712"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574630022729">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6457</tag>
+					<tag>C645x High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574630022729"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574630022729"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6457"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6457"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+		</contents>
+		<contents name="C674x Floating-point DSP" desc="C674x Floating-point DSP" icon="plugin://icons/obj16/devices.png">
+			<contents name="EVMC6747" desc="EVMC6747" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574638262571">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6747</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574638309307">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6747</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574638309307"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_EVMC6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747.EVMC6747"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574638309307"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_EVMC6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747.EVMC6747"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574638309307"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_EVMC6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747.EVMC6747"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574638912890">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6747</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574638912890"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_EVMC6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747.EVMC6747"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574638912890"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_EVMC6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747.EVMC6747"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="EVMC6748" desc="EVMC6748" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574639333517">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574639395072">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574639395072"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_EVMC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.EVMC6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574639395072"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_EVMC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.EVMC6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574639395072"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_EVMC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.EVMC6748"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574639939949">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574639939949"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_EVMC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.EVMC6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574639939949"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_EVMC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.EVMC6748"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="LCDKC6748" desc="LCDKC6748" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574640361716">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>LCDKC6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574640428401">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>LCDKC6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574640428401"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_LCDKC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.LCDKC6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574640428401"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_LCDKC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.LCDKC6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574640428401"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_LCDKC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.LCDKC6748"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574640973848">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>LCDKC6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574640973848"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_LCDKC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.LCDKC6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574640973848"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_LCDKC6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748.LCDKC6748"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6742" desc="TMS320C6742" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574641392765">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6742</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574641448620">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6742</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574641448620"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6742"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6742"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574641448620"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6742"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6742"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574641448620"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6742"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6742"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574642021995">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6742</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574642021995"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6742"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6742"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574642021995"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6742"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6742"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6743" desc="TMS320C6743" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574642448892">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6743</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574642511017">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6743</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574642511017"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6743"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6743"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574642511017"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6743"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6743"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574642511017"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6743"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6743"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574643042215">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6743</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574643042215"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6743"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6743"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574643042215"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6743"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6743"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6745" desc="TMS320C6745" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574643432634">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6745</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574643495899">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6745</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574643495899"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6745"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6745"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574643495899"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6745"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6745"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574643495899"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6745"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6745"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574644028237">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6745</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574644028237"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6745"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6745"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574644028237"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6745"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6745"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6746" desc="TMS320C6746" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574644471662">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6746</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574644555446">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6746</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574644555446"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6746"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6746"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574644555446"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6746"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6746"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574644555446"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6746"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6746"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574645094623">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6746</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574645094623"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6746"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6746"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574645094623"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6746"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6746"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6747" desc="TMS320C6747" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574645499862">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6747</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574645561417">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6747</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574645561417"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574645561417"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574645561417"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574646117693">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6747</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574646117693"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574646117693"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6747"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6747"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6748" desc="TMS320C6748" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574653104203">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574653214775">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574653214775"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574653214775"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574653214775"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574653800688">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6748</tag>
+					<tag>C674x Floating-point DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574653800688"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574653800688"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6748"/>
+							<attribute key="device.variant" value="TMS320C67XX.TMS320C6748"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+		</contents>
+		<contents name="TCI High Performance DSP" desc="TCI High Performance DSP" icon="plugin://icons/obj16/devices.png">
+			<contents name="DSKTCI6482" desc="DSKTCI6482" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574654473236">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>DSKTCI6482</tag>
+					<tag>TCI High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574654568988">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>DSKTCI6482</tag>
+					<tag>TCI High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574654568988"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_DSKTCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.DSKTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574654568988"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_DSKTCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.DSKTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574654568988"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_DSKTCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.DSKTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574655113295">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>DSKTCI6482</tag>
+					<tag>TCI High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574655113295"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_DSKTCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.DSKTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574655113295"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_DSKTCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.DSKTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="EVMTCI6482 (TMS320TCI6482)" desc="EVMTCI6482 (TMS320TCI6482)" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574655536202">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMTCI6482 (TMS320TCI6482)</tag>
+					<tag>TCI High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574655601747">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMTCI6482 (TMS320TCI6482)</tag>
+					<tag>TCI High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574655601747"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_EVMTCI6482_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.EVMTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574655601747"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_EVMTCI6482_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.EVMTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574655601747"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_EVMTCI6482_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.EVMTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574656134655">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMTCI6482 (TMS320TCI6482)</tag>
+					<tag>TCI High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574656134655"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_EVMTCI6482_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.EVMTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574656134655"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_EVMTCI6482_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482.EVMTCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320TCI6482" desc="TMS320TCI6482" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574656542173">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320TCI6482</tag>
+					<tag>TCI High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574656600308">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320TCI6482</tag>
+					<tag>TCI High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574656600308"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574656600308"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574656600308"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574657084770">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320TCI6482</tag>
+					<tag>TCI High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574657084770"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574657084770"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320TCI6482"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6482"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320TCI6484" desc="TMS320TCI6484" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574657446692">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320TCI6484</tag>
+					<tag>TCI High Performance DSP</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574657501407">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320TCI6484</tag>
+					<tag>TCI High Performance DSP</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574657501407"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320TCI6484"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6484"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574657501407"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320TCI6484"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6484"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574657501407"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320TCI6484"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6484"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574658013227">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320TCI6484</tag>
+					<tag>TCI High Performance DSP</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574658013227"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320TCI6484"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6484"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574658013227"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320TCI6484"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320TCI6484"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+		</contents>
+		<contents name="TMS320C64XX" desc="TMS320C64XX" icon="plugin://icons/obj16/devices.png">
+			<contents name="EVMC6424" desc="EVMC6424" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574658562094">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6424</tag>
+					<tag>TMS320C64XX</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574658643597">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6424</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574658643597"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_EVMC6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424.EVMC6424"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574658643597"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_EVMC6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424.EVMC6424"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574658643597"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_EVMC6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424.EVMC6424"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574659178215">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6424</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574659178215"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_EVMC6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424.EVMC6424"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574659178215"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_EVMC6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424.EVMC6424"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="EVMC6474" desc="EVMC6474" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574659577754">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6474</tag>
+					<tag>TMS320C64XX</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574659638739">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6474</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574659638739"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_EVMC6474"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMC6474"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574659638739"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_EVMC6474"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMC6474"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574659638739"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_EVMC6474"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMC6474"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574660157968">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMC6474</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574660157968"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_EVMC6474"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMC6474"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574660157968"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_EVMC6474"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMC6474"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="EVMTCI6488" desc="EVMTCI6488" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574660602533">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMTCI6488</tag>
+					<tag>TMS320C64XX</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574660682327">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMTCI6488</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574660682327"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_EVMTCI6488"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMTCI6488"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574660682327"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_EVMTCI6488"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMTCI6488"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574660682327"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_EVMTCI6488"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMTCI6488"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574661228344">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>EVMTCI6488</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574661228344"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_EVMTCI6488"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMTCI6488"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574661228344"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_EVMTCI6488"/>
+							<attribute key="device.variant" value="TMS320C64XX.EVMTCI6488"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6421" desc="TMS320C6421" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574661631302">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6421</tag>
+					<tag>TMS320C64XX</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574661693427">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6421</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574661693427"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6421"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6421"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574661693427"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6421"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6421"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574661693427"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6421"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6421"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574662205247">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6421</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574662205247"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6421"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6421"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574662205247"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6421"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6421"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+			<contents name="TMS320C6424" desc="TMS320C6424" icon="plugin://icons/obj16/devices.png">
+				<filter id="filter_54574667404378">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6424</tag>
+					<tag>TMS320C64XX</tag>
+					</search.tags>
+				</filter>
+				<contents name="Single-core Examples" desc="System Analyzer (UIA) Single-core Examples" customPageType="genericNote">
+				<filter id="filter_54574667476762">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6424</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Single-core Examples</tag>
+					</search.tags>
+				</filter>
+				<content name="Stairstep JTAG RunMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system. The Log data is obtained by reading the running target (only works on C64X+ and C66 CPUs). The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_6.projectspec">
+					<filter.ref ref.id="filter_54574667476762"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepRunMode_TMS320C6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep JTAG StopMode" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained when the target is halted.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_3.projectspec">
+					<filter.ref ref.id="filter_54574667476762"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepStopMode_TMS320C6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="Stairstep ProbePoint" desc="The stairstep example runs continuously and periodically generates log events. Different threads (Hwi, Swi, Task) run to present a CPU load to the system.  The Log data is obtained by temporarily stopping the target when the Log call is made.  The sizes of the loggers in LoggingSetup might need to be decreased if your target does not have enough memory." href="C:\ti\uia_1_03_01_08\resources\single_coreExamples\com_ti_uia_example_4.projectspec">
+					<filter.ref ref.id="filter_54574667476762"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="stairstepProbePoint_TMS320C6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+				<contents name="Tutorials" desc="System Analyzer (UIA) Tutorials" customPageType="genericNote">
+				<filter id="filter_54574667954385">
+					<devices><device>C6000</device></devices>
+					<search.tags>
+					<tag>TMS320C6424</tag>
+					<tag>TMS320C64XX</tag>
+					<tag>Tutorials</tag>
+					</search.tags>
+				</filter>
+				<content name="System Analyzer and UIA Tutorial 1" desc="This tutorial shows how to log errors, warnings and info events, benchmark code and control which events are logged. Refer to http://processors.wiki.ti.com/index.php/McsaTutorial1 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_5.projectspec">
+					<filter.ref ref.id="filter_54574667954385"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_1_TMS320C6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424"/>
+						</attributes>
+					</type>
+				</content>
+				<content name="System Analyzer and UIA Tutorial 2" desc="This tutorial shows how to log data that can be graphed and analyzed for min/max/average statistics.  Also demonstrates how to use LoggerCircBuf and JTAG Run-Mode to upload events while a target is running . Refer to http://processors.wiki.ti.com/index.php/McsaTutorial2 for more details." href="C:\ti\uia_1_03_01_08\resources\tutorials\com_ti_uia_example_7.projectspec">
+					<filter.ref ref.id="filter_54574667954385"/>
+					<type>projectSpec
+						<attributes>
+							<attribute key="project.name" value="uiaTutorial_2_TMS320C6424"/>
+							<attribute key="device.variant" value="TMS320C64XX.TMS320C6424"/>
+						</attributes>
+					</type>
+				</content>
+				</contents>
+			</contents>
+		</contents>
+	</contents>
+
+</resource.explorer>
